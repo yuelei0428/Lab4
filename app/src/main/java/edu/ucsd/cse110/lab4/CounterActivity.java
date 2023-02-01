@@ -41,10 +41,6 @@ public class CounterActivity extends AppCompatActivity {
                 Thread.sleep(500);
             } while (count < maxCount + 1);
 
-            runOnUiThread(()->{
-                Utilities.showAlert(this, "Count is finished!");
-            });
-
             return null;
         });
     }
