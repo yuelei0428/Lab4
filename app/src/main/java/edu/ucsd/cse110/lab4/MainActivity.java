@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public void onShowCounterClicked(View view) {
         Intent intent = new Intent(this, CounterActivity.class);
 
-        TextView maxCountView = findViewById(R.id.max_count_view);
+        TextView maxCountView = (TextView) findViewById(R.id.max_count_view);
         String maxCountStr = maxCountView.getText().toString();
 
         Optional<Integer> maybeMaxCount = Utilities.parseCount(maxCountStr);
